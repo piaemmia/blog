@@ -1,15 +1,19 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #BDE0FE;
-    margin: 0;
-    padding: 0;
-}
-
 header {
     background-color: #ffc8dd;
     color: #ff008c;
     padding: 1em;
     text-align: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #BDE0FE;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -17,11 +21,16 @@ footer {
     color: #ff008c;
     text-align: center;
     padding: 1em;
-    position: fixed;
     bottom: 0;
-    width: 100%;
+    margin-top: auto;
 }
-
+/* About Me Styles */
+section.about-me {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
 /* Photo Grid Styles */
 .photo-grid {
     display: grid;
@@ -39,7 +48,9 @@ footer {
 .grid-item-container {
     border: 5px solid #CDB4DB; /* Add border style */
     border-radius: 8px; /* Add border radius */
-    padding: 10px; /* Add padding to create space between the border and the content */
+    padding-top: 15px; /* Add padding to create space between the border and the content */
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .grid-item img {
@@ -62,8 +73,8 @@ footer {
 .caption {
     background-color: #CDB4DB;
     color: white;
-    padding: 10px;
-    margin: 8px;
+    padding: 5px;
+    margin-top: 20px;
     text-align: center;
     border-radius: 8px;
 }
